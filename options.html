@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Pause Videos Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="panel hero">
+      <p class="eyebrow">Extension settings</p>
+      <h1>Auto-Pause Videos</h1>
+      <p class="lead">Control when the extension pauses videos and review the privacy guarantees before you publish.</p>
+    </section>
+
+    <section class="panel settings-card">
+      <div class="setting-row">
+        <div>
+          <h2>Enable auto-pause</h2>
+          <p>Pause videos automatically whenever the tab becomes hidden or the window loses focus.</p>
+        </div>
+
+        <label class="switch" for="autoPauseToggle">
+          <input id="autoPauseToggle" type="checkbox" checked aria-label="Enable auto-pause" title="Enable auto-pause">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="status-box">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span id="statusText">Auto-pause is enabled.</span>
+      </div>
+    </section>
+
+    <section class="panel details-grid">
+      <article>
+        <h3>Scope</h3>
+        <p>Runs on standard HTTP and HTTPS websites where videos are present.</p>
+      </article>
+      <article>
+        <h3>Privacy</h3>
+        <p>No analytics, no account, no remote requests, and no stored browsing history.</p>
+      </article>
+      <article>
+        <h3>Support</h3>
+        <p>Use the popup to open the local privacy policy and review the behavior before publishing.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="options.js"></script>
+</body>
+</html>

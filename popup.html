@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Pause Videos</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Auto-Pause Videos</h1>
+      <p class="version">v1.0.0</p>
+    </div>
+
+    <div class="status">
+      <div id="statusIndicator" class="status-indicator active" aria-hidden="true"></div>
+      <span id="statusText" class="status-text">Enabled</span>
+    </div>
+
+    <div class="info">
+      <p>Videos automatically pause when you switch tabs or minimize the window.</p>
+    </div>
+
+    <div class="features">
+      <h3>Features:</h3>
+      <ul>
+        <li>✓ Auto-pause on tab switch</li>
+        <li>✓ Works with all video formats</li>
+        <li>✓ Zero data collection</li>
+        <li>✓ Lightweight & fast</li>
+      </ul>
+    </div>
+
+    <div class="actions">
+      <button id="openOptions" class="button secondary">Settings</button>
+      <button id="openPrivacy" class="button primary">Privacy</button>
+    </div>
+
+    <div class="footer">
+      <p>Local-only. No tracking, no analytics.</p>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
